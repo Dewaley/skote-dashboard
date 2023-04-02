@@ -2,9 +2,30 @@
   box-sizing: border-box;
   font-size: 10px;
   font-family: "Poppins", sans-serif;
+  --dark-mode-items: #2a3042;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.element {
+  background-color: var(--dark-mode-items);
+}
+
+.sidebar {
+  width: 20vw;
+  height: 100vh;
+}
+
+.sidebar .logo {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .logo img {
+  height: 2.2rem;
 }

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const AuthLayout = () => {
   return (
-    <div><h1>Hello</h1></div>
-  )
-}
+    <div>
+      <Sidebar />
+    </div>
+  );
+};
 
-export default AuthLayout
+export default AuthLayout;
