@@ -1,9 +1,10 @@
 import "./App.css";
+import AuthLayout from "./layout/AuthLayout";
 
 function App() {
   return (
     <div className='App'>
-      <h4>Skote dashboard</h4>
+      <AuthLayout />
     </div>
   );
 }
