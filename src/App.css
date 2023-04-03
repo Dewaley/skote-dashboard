@@ -82,18 +82,131 @@ ul {
   color: white;
 }
 
+.mainLayout {
+  width: 100%;
+  background-color: var(--dark-mode-bg);
+}
+
 .Navbar {
   height: 7rem;
-  width: 100%;
   background-color: rgb(38, 43, 60);
   box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
   color: var(--dark-mode-text);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 2rem;
+  padding: 0 2rem;
 }
 
-.mainLayout {
-  width: 100%;
-  background-color: var(--dark-mode-bg);
+.Navbar .left,
+.Navbar .right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.Navbar svg {
+  cursor: pointer;
+}
+
+.left form {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-mode-items);
+  border-radius: 20px;
+  padding: 1rem 1.25rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.left input {
+  width: 20vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark-mode-text);
+}
+
+.Navbar .right .notification {
+  position: relative;
+}
+
+.right .notification .number {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  background-color: red;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+}
+
+.bell {
+  animation: swing 2s infinite;
+}
+
+@keyframes swing {
+  0% {
+    scale: 1.1;
+    transform: rotate(0deg);
+  }
+  12.5% {
+    scale: 1.1;
+    transform: rotate(15deg);
+  }
+  25% {
+    scale: 1.1;
+    transform: rotate(-15deg);
+  }
+  37.5% {
+    scale: 1.1;
+    transform: rotate(15deg);
+  }
+  50% {
+    scale: 1.1;
+    transform: rotate(-15deg);
+  }
+  62.5% {
+    scale: 1.1;
+    transform: rotate(15deg);
+  }
+  75% {
+    scale: 1.1;
+    transform: rotate(-15deg);
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.settings {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.user img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
