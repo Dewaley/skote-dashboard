@@ -1,12 +1,16 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
   return (
-    <div className="layout">
+    <div className='layout'>
       <Sidebar />
-      <Outlet />
+      <div className='mainLayout'>
+        <Navbar />
+        <Outlet />
+      </div>
     </div>
   );
 };

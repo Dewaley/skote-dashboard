@@ -4,6 +4,7 @@
   font-family: "Poppins", sans-serif;
   --dark-mode-items: #2a3042;
   --dark-mode-text: #a6b0cf;
+  --dark-mode-bg: #222736;
 }
 
 * {
@@ -45,7 +46,7 @@
 .deets {
   display: flex;
   flex-direction: column;
-  padding: 3rem 3rem;
+  padding: 2rem 3rem;
   gap: 3rem;
 }
 
@@ -79,4 +80,20 @@ ul {
 
 .sidebar .activeLink {
   color: white;
+}
+
+.Navbar {
+  height: 7rem;
+  width: 100%;
+  background-color: rgb(38, 43, 60);
+  box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+  color: var(--dark-mode-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainLayout {
+  width: 100%;
+  background-color: var(--dark-mode-bg);
 }
