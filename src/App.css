@@ -3,6 +3,7 @@
   font-size: 10px;
   font-family: "Poppins", sans-serif;
   --dark-mode-items: #2a3042;
+  --dark-mode-text: #a6b0cf;
 }
 
 * {
@@ -17,6 +18,13 @@
 .sidebar {
   width: 20vw;
   height: 100vh;
+  color: var(--dark-mode-text);
+  position: relative;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--dark-mode-text);
 }
 
 .sidebar .logo {
@@ -32,4 +40,43 @@
 
 .layout {
   display: flex;
+}
+
+.deets {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  gap: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.deets ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar .icon {
+  font-size: 1.75rem;
+}
+
+.deets ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1.25rem;
+  font-weight: 500;
+  transition: 0.35s color ease-in;
+}
+
+.deets ul li a:hover {
+  color: white;
+  transition: 0.35s color ease-in;
+}
+
+.sidebar .activeLink {
+  color: white;
 }
