@@ -1,4 +1,4 @@
-import { IoIosMenu } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 import {
   BiSearchAlt,
   BiCustomize,
@@ -7,17 +7,25 @@ import {
 } from "react-icons/bi";
 import { TbSettings } from "react-icons/tb";
 import pfp from "../assets/pfp.jpg";
+import { UseHamburger } from "../context/Hamburger";
 
 const Navbar = () => {
+  const [hamburger, setHamburger] = UseHamburger(false);
   return (
     <div className='Navbar'>
       <div className='left'>
-        <IoIosMenu className='hamburger' />
+        <GiHamburgerMenu
+          className='hamburger'
+          onClick={() => {
+            setHamburger(!hamburger);
+          }}
+        />
         <form action=''>
           <BiSearchAlt className='search' />
-          <input type='text' name='' id='' />
+          <input type='text' name='' id='' placeholder='Search...' />
         </form>
       </div>
+      {hamburger ? "true" : "false"}
       <div className='right'>
         <BiCustomize className='customize' />
         <div className='notification'>

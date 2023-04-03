@@ -5,6 +5,7 @@
   --dark-mode-items: #2a3042;
   --dark-mode-text: #a6b0cf;
   --dark-mode-bg: #222736;
+  --dark-mode-gray-700: #f6f6f6;
 }
 
 * {
@@ -117,7 +118,7 @@ ul {
   border-radius: 20px;
   padding: 1rem 1.25rem;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .left input {
@@ -125,6 +126,10 @@ ul {
   background-color: transparent;
   border: none;
   outline: none;
+  color: var(--dark-mode-gray-700);
+}
+
+.left input::placeholder {
   color: var(--dark-mode-text);
 }
 

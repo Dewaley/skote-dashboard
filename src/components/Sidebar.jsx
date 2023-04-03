@@ -7,6 +7,7 @@ import { BsWallet2, BsCalendar3, BsFileEarmarkText } from "react-icons/bs";
 import { TbArrowsExchange } from "react-icons/tb";
 import { BiUserCheck } from "react-icons/bi";
 
+
 const Sidebar = () => {
   return (
     <div className='element sidebar'>
