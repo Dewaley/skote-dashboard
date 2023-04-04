@@ -18,8 +18,9 @@
 }
 
 .sidebar {
-  width: 20vw;
-  height: 100vh;
+  /* width: 20vw; */
+  width: 300px;
+  min-height: 100vh;
   color: var(--dark-mode-text);
   position: relative;
 }
@@ -37,11 +38,25 @@
 }
 
 .sidebar .logo img {
-  height: 2.2rem;
+  height: 2.3rem;
+}
+
+.closed.sidebar {
+  width: 70px;
+}
+
+.closedDeets {
+  display: none;
+}
+
+.closed.sidebar .deets {
+  display: none;
 }
 
 .layout {
   display: flex;
+  height: 100%;
+  background-color: var(--dark-mode-bg);
 }
 
 .deets {
@@ -49,6 +64,50 @@
   flex-direction: column;
   padding: 2rem 3rem;
   gap: 3rem;
+}
+
+.closed.sidebar .closedDeets {
+  display: block;
+  background-color: var(--dark-mode-items);
+}
+
+.closed.sidebar .closedDeets ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closed.sidebar .closedDeets ul li {
+  width: 100%;
+  overflow-x: visible;
+}
+
+.closed.sidebar .closedDeets ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 6rem;
+  position: relative;
+}
+
+.closed.sidebar .closedDeets ul li a .content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  right: -16rem;
+  top: 0;
+  width: 15rem;
+  height: 6rem;
+
+  background-color: rgb(38, 43, 60);
+}
+
+.closed.sidebar .closedDeets .content {
+  display: none;
 }
 
 ul {
@@ -85,7 +144,7 @@ ul {
 
 .mainLayout {
   width: 100%;
-  background-color: var(--dark-mode-bg);
+  height: 100%;
 }
 
 .Navbar {

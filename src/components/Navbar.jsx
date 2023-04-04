@@ -11,6 +11,7 @@ import { UseHamburger } from "../context/Hamburger";
 
 const Navbar = () => {
   const [hamburger, setHamburger] = UseHamburger(false);
+
   return (
     <div className='Navbar'>
       <div className='left'>
