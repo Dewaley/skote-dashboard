@@ -93,7 +93,11 @@
   position: relative;
 }
 
-.closed.sidebar .closedDeets ul li a .content {
+.closed.sidebar .closedDeets ul li a span {
+  background-color: rgb(38, 43, 60);
+}
+
+.closed.sidebar .closedDeets ul li a:hover .content {
   position: absolute;
   display: flex;
   align-items: center;
@@ -102,8 +106,6 @@
   top: 0;
   width: 15rem;
   height: 6rem;
-
-  background-color: rgb(38, 43, 60);
 }
 
 .closed.sidebar .closedDeets .content {
