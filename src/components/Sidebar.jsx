@@ -19,6 +19,7 @@ const Sidebar = () => {
         ) : (
           <img src={bigLogo} alt='Skote logo' />
         )}
+        <img src={smallLogo} alt='Skote logo' className="small" />
       </div>
       <nav className='deets'>
         <h3>APPS</h3>

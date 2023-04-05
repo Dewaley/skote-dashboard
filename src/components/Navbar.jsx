@@ -21,12 +21,12 @@ const Navbar = () => {
             setHamburger(!hamburger);
           }}
         />
-        <form action=''>
+        <BiSearchAlt className='searchBtn' />
+        {/* <form action=''>
           <BiSearchAlt className='search' />
           <input type='text' name='' id='' placeholder='Search...' />
-        </form>
+        </form> */}
       </div>
-      {hamburger ? "true" : "false"}
       <div className='right'>
         <BiCustomize className='customize' />
         <div className='notification'>
