@@ -17,6 +17,10 @@
   background-color: var(--dark-mode-items);
 }
 
+a {
+  text-decoration: none;
+}
+
 .sidebar {
   /* width: 20vw; */
   width: 300px;
@@ -293,6 +297,10 @@ ul {
   object-position: center;
 }
 
+.Navbar .deets {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .sidebar {
     position: absolute;
@@ -317,15 +325,11 @@ ul {
 
 @media screen and (max-width: 480px) {
   .sidebar {
-    position: absolute;
-    top: 0;
-    left: -30rem;
-    width: 7rem;
+    display: none;
   }
 
   .closed.sidebar {
-    left: 0;
-    position: absolute;
+    display: none;
   }
 
   .user span,
@@ -335,6 +339,54 @@ ul {
 
   .left form {
     display: none;
+  }
+
+  .Navbar {
+    position: relative;
+  }
+
+  .Navbar .deets {
+    position: absolute;
+    height: calc(100vh - 7rem);
+    bottom: calc((100vh - 7rem) * -1);
+    left: 0;
+    background-color: var(--dark-mode-items);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Navbar .deets h3,
+  .Navbar .deets ul {
+    padding: 0rem 2rem;
+  }
+
+  .Navbar .deets h3 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .Navbar .deets ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Navbar .deets ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 1.25rem;
+    font-weight: 500;
+    transition: 0.35s color ease-in;
+    color: var(--dark-mode-text);
+    white-space: nowrap;
+  }
+
+  .Navbar .deets ul li a:hover {
+    color: white;
+    transition: 0.35s color ease-in;
   }
 
   .search {
