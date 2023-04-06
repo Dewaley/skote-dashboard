@@ -345,16 +345,23 @@ ul {
     position: relative;
   }
 
+  .Navbar .active.deets {
+    display: flex;
+    bottom: calc((100vh - 7rem) * -1);
+    transition: bottom .15s ease-in;
+  }
+
   .Navbar .deets {
     position: absolute;
     height: calc(100vh - 7rem);
-    bottom: calc((100vh - 7rem) * -1);
+    bottom: calc((100vh - 5rem) * -1);
     left: 0;
     background-color: var(--dark-mode-items);
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 2rem;
+    transition: bottom .15s ease-in;
   }
 
   .Navbar .deets h3,
